@@ -1,0 +1,156 @@
+:root{
+    --cor-primario:#ececec;
+    --cor-secundario:#3a41e4;
+
+    --font-spartan:'League Spartan', sans-serif ;
+    --font-montserrat:'Montserrat', sans-serif;
+    --font-space:'Space Mono', monospace;
+    /* 
+    
+    
+    */
+}
+body{
+    background: var(--cor-primario);
+}
+.curriculo{
+    display: flex;
+    width: 100%;
+    background: var(--cor-primario);
+    padding: 0 1em;
+}
+@media screen and (max-width:400px) {
+    .curriculo{
+        padding: 0 0;
+    }
+}
+.curriculo h1{
+    text-align: center;
+    font-family: var(--font-spartan);
+    margin: 8px 0;
+    color: var(--cor-secundario);
+    font-size: 40px;
+}
+.curriculo h2{
+    
+    color: var(--cor-secundario);
+    margin: 8px 0;
+    font-family: var(--font-spartan);
+}
+aside{
+    background: var(--cor-secundario);
+    color: white;
+    width: 35%;
+    min-width: 180px;
+    max-width: 600px;
+}
+
+aside header{
+    background: #2c30a8;
+    padding: 1em 5px;
+    width: 100%;
+}
+aside header >img{
+    max-width: 100%;
+}
+.contato{
+    text-align: center;
+}
+.contato h2{
+   font-family:var(--font-spartan) ;
+   font-weight: bold;
+   margin: 10px 0;
+}
+.contato li,a{
+    font-family: var(--font-space);
+}
+.contato li{
+    display: flex;
+    flex-direction: column;
+}
+.contato a{
+    text-align: center;
+    color: white;
+    background: #2c30a8;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px;
+}
+.contato a:hover{
+    background: #383dd2;
+}
+.sobre_mim{
+    width: 100%;
+    min-width: 220px;
+    padding: 5px;
+}
+.profissao{
+    display: flex;
+    
+    color: var(--cor-secundario);
+    font-family: var(--font-spartan);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.profissao ul{
+    display: flex;
+    flex-wrap: wrap;
+    background: #9e9e9e;
+    width: 100%;
+}
+.profissao li{
+    display: flex;
+    text-align: center;
+    background: var(--cor-primario);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    flex-direction: column;
+}
+.profissao li img{
+    width: 70%;
+    background: #00000000;
+    margin: 0 auto;
+}
+.resumo_pessoal p{
+    font-size: 1.2em;
+    font-family: var(--font-montserrat);
+    width: 100%;
+
+}
+@media screen and (max-width:400px) {
+    .resumo_pessoal p{
+        font-size: 13px;
+        font-weight: 700;
+    }
+}
+.cursos{
+    display: flex;
+    background: #9e9e9e;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+.cursos li{
+    position: relative;
+    display: flex;
+    background: var(--cor-primario);
+    padding: 0.5em;
+    margin: 5px;
+    flex-direction: column;
+}
+.cursos li img{
+    max-width: 150px;
+}
+.alura{
+    background: linear-gradient(230deg, #0000ff,#00002f 40%);
+    padding: 8px;
+}
+.cursos li a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 8px;
+    background: var(--cor-secundario);
+}
